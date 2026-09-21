@@ -1,0 +1,147 @@
+/* ============================================================
+   SwiftReplyDesk — styles.css
+   Tokens & composants partagés (le gros du style est en Tailwind).
+   ============================================================ */
+
+:root {
+  --primary: #4F46E5;        /* indigo-600 */
+  --primary-dark: #4338CA;   /* indigo-700 */
+  --secondary: #0F172A;      /* slate-900 */
+  --accent: #3B82F6;         /* blue-500 */
+  --success: #10B981;        /* emerald-500 */
+  --bg: #F8FAFC;             /* slate-50 */
+  --muted: #64748B;          /* slate-500 */
+  --border: #E2E8F0;         /* slate-200 */
+  --violet: #7C3AED;
+  --cyan: #06B6D4;
+  --teal: #14B8A6;
+}
+
+html { scroll-behavior: smooth; }
+
+/* Liseré dégradé multicolore en haut de page */
+body::before { content: ""; display: block; height: 3px; background: linear-gradient(90deg, #4F46E5, #7C3AED, #3B82F6, #14B8A6); }
+
+body {
+  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--secondary);
+  background: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---- Layout helper ---- */
+.wrap { max-width: 80rem; margin-inline: auto; padding-inline: 1rem; }
+@media (min-width: 640px)  { .wrap { padding-inline: 1.5rem; } }
+@media (min-width: 1024px) { .wrap { padding-inline: 2rem; } }
+
+.section { padding: 5rem 0; }
+@media (min-width: 768px) { .section { padding: 6rem 0; } }
+
+/* ---- Buttons ---- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  border-radius: .65rem; font-weight: 600; font-size: .9rem; line-height: 1;
+  padding: .8rem 1.4rem; white-space: nowrap; cursor: pointer;
+  transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease, transform .15s ease;
+  text-decoration: none;
+}
+.btn:active { transform: translateY(1px); }
+.btn-primary { background: linear-gradient(135deg, #4F46E5 0%, #3B82F6 100%); color: #fff; box-shadow: 0 4px 14px -4px rgba(79,70,229,.55); }
+.btn-primary:hover { background: linear-gradient(135deg, #4338CA 0%, #2563EB 100%); }
+.btn-outline { border: 1px solid var(--border); background: #fff; color: var(--secondary); }
+.btn-outline:hover { border-color: #cbd5e1; background: #f8fafc; }
+.btn-white { background: #fff; color: var(--secondary); }
+.btn-white:hover { background: #f1f5f9; }
+.btn-lg { padding: .95rem 1.7rem; font-size: .98rem; }
+.btn-sm { padding: .55rem 1rem; font-size: .82rem; }
+
+/* ---- Nav ---- */
+.nav-item {
+  display: inline-flex; align-items: center; gap: .35rem;
+  padding: .5rem .8rem; border-radius: .5rem;
+  font-size: .9rem; font-weight: 500; color: #334155; cursor: pointer;
+  transition: color .15s ease, background-color .15s ease; text-decoration: none;
+}
+.nav-item:hover { color: var(--primary); background: #f1f5f9; }
+.nav-item.active { color: var(--primary); font-weight: 600; }
+
+/* ---- Dropdowns ---- */
+.dropdown { position: relative; }
+.dropdown-panel {
+  position: absolute; left: 0; top: 100%; padding-top: .55rem;
+  opacity: 0; visibility: hidden; transform: translateY(8px);
+  transition: opacity .18s ease, transform .18s ease, visibility .18s;
+  z-index: 60;
+}
+.dropdown:hover .dropdown-panel,
+.dropdown:focus-within .dropdown-panel { opacity: 1; visibility: visible; transform: none; }
+
+.dropdown-card {
+  background: #fff; border: 1px solid var(--border); border-radius: .9rem;
+  box-shadow: 0 18px 40px -18px rgba(15,23,42,.22); padding: .5rem;
+}
+.dropdown-card.dropdown-wide { width: 640px; }
+.dropdown-link {
+  display: flex; align-items: center; gap: .65rem;
+  padding: .55rem .7rem; border-radius: .55rem;
+  font-size: .875rem; color: #334155; text-decoration: none; line-height: 1.25;
+}
+.dropdown-link:hover { background: #f1f5f9; color: var(--primary); }
+.dropdown-link .di { flex-shrink: 0; width: 1.9rem; height: 1.9rem; display: flex; align-items: center; justify-content: center;
+  border-radius: .5rem; background: #eef2ff; color: var(--primary); font-size: .85rem; }
+.dropdown-heading { font-size: .68rem; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; color: #94a3b8; padding: .5rem .7rem .3rem; }
+
+/* ---- Cards ---- */
+.card { background: #fff; border: 1px solid var(--border); border-radius: 1rem; }
+.card-hover { transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+.card-hover:hover { border-color: #c7d2fe; box-shadow: 0 18px 40px -22px rgba(79,70,229,.35); transform: translateY(-3px); }
+.icon-tile { width: 3rem; height: 3rem; border-radius: .8rem; display: flex; align-items: center; justify-content: center; font-size: 1.35rem; }
+
+/* ---- Text / badges ---- */
+.text-gradient { background: linear-gradient(90deg, #4F46E5 0%, #3B82F6 50%, #14B8A6 100%); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.badge { display: inline-flex; align-items: center; gap: .4rem; font-size: .75rem; font-weight: 600; padding: .32rem .75rem; border-radius: 9999px; }
+.eyebrow { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--primary); }
+
+/* ---- Accordion (FAQ) ---- */
+.accordion-item { border: 1px solid var(--border); border-radius: .9rem; background: #fff; overflow: hidden; transition: border-color .2s ease; }
+.accordion-item.open { border-color: #c7d2fe; }
+.accordion-btn {
+  width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 1.15rem 1.3rem; text-align: left; font-weight: 600; color: var(--secondary);
+  background: transparent; border: 0; cursor: pointer; font-size: .98rem; font-family: inherit;
+}
+.accordion-btn:hover { color: var(--primary); }
+.accordion-icon { flex-shrink: 0; width: 1.9rem; height: 1.9rem; display: flex; align-items: center; justify-content: center; border-radius: 9999px; background: #f1f5f9; color: #64748b; font-size: .75rem; transition: transform .25s ease, background .2s, color .2s; }
+.accordion-item.open .accordion-icon { transform: rotate(180deg); background: var(--primary); color: #fff; }
+.accordion-content { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+.accordion-content-inner { padding: 0 1.3rem 1.25rem; color: var(--muted); font-size: .95rem; line-height: 1.65; }
+.accordion-item.open .accordion-content { max-height: 420px; }
+
+/* ---- Flow diagram (UnlockBill) ---- */
+.flow { display: flex; align-items: stretch; gap: .6rem; }
+.flow-step { flex: 1; background: #fff; border: 1px solid var(--border); border-radius: 1rem; padding: 1.25rem 1.1rem; position: relative; }
+.flow-step .flow-label { display: inline-flex; align-items: center; gap: .4rem; font-size: .72rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--primary); margin-bottom: .6rem; }
+.flow-step .flow-title { font-weight: 700; font-size: .95rem; margin-bottom: .35rem; }
+.flow-step .flow-desc { font-size: .82rem; color: var(--muted); line-height: 1.5; }
+.flow-arrow { display: flex; align-items: center; color: #94a3b8; font-size: 1rem; }
+.flow-doc { border: 1px dashed #cbd5e1; border-radius: .6rem; padding: .6rem .7rem; background: #f8fafc; font-size: .8rem; color: #475569; display: flex; align-items: center; gap: .5rem; margin-bottom: .6rem; }
+@media (max-width: 768px) {
+  .flow { flex-direction: column; }
+  .flow-arrow { transform: rotate(90deg); justify-content: center; padding: .15rem 0; }
+}
+
+/* ---- Reveal on scroll ---- */
+.reveal { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* ---- Footer ---- */
+.footer-title { font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: #64748b; font-weight: 700; margin-bottom: 1rem; }
+.footer-link { display: block; color: #94a3b8; font-size: .875rem; padding: .28rem 0; text-decoration: none; }
+.footer-link:hover { color: #fff; }
+.footer-link i { width: 1.1rem; display: inline-block; color: #64748b; }
+
+/* ---- Mobile menu ---- */
+#mobile-menu a.mm-link { display: flex; align-items: center; justify-content: space-between; padding: .8rem .5rem; border-bottom: 1px solid #f1f5f9; color: #334155; font-weight: 500; text-decoration: none; }
+#mobile-menu a.mm-link:hover { color: var(--primary); }
+#mobile-menu .mm-heading { font-size: .7rem; text-transform: uppercase; letter-spacing: .06em; font-weight: 700; color: #94a3b8; padding: 1rem .5rem .4rem; }
