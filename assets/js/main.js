@@ -74,3 +74,26 @@
     els.forEach(function (el) { el.classList.add('is-visible'); });
   }
 })();
+
+
+/* ---- Bascule thème clair / sombre ---- */
+(function () {
+  var btn = document.createElement('button');
+  btn.className = 'theme-toggle';
+  btn.setAttribute('aria-label', 'Basculer le thème clair / sombre');
+  btn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+  document.body.appendChild(btn);
+
+  function apply(dark) {
+    document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    btn.innerHTML = dark ? '<i class="fa-solid fa-sun"></i>' : '<i class="fa-solid fa-moon"></i>';
+  }
+  var saved = null;
+  try { saved = localStorage.getItem('srd-theme'); } catch (e) {}
+  apply(saved === 'dark');
+  btn.addEventListener('click', function () {
+    var dark = document.documentElement.getAttribute('data-theme') !== 'dark';
+    apply(dark);
+    try { localStorage.setItem('srd-theme', dark ? 'dark' : 'light'); } catch (e) {}
+  });
+})();
