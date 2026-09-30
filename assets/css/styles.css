@@ -213,3 +213,44 @@ body {
 
 .theme-toggle { position: fixed; right: 1rem; bottom: 1rem; z-index: 70; width: 46px; height: 46px; border-radius: 9999px; border: 0; cursor: pointer; background: linear-gradient(135deg, #4F46E5, #3B82F6); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1rem; box-shadow: 0 10px 22px -8px rgba(79,70,229,.6); transition: transform .15s ease; }
 .theme-toggle:hover { transform: translateY(-2px); }
+
+
+/* ===================== Bouton WhatsApp, statuts de formulaire ===================== */
+.wa-float { position: fixed; right: calc(1rem - 2px); bottom: 4.75rem; z-index: 70; width: 50px; height: 50px; border-radius: 9999px; background: #25D366; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 1.65rem; text-decoration: none; box-shadow: 0 10px 22px -8px rgba(37,211,102,.65); transition: transform .15s ease; }
+.wa-float:hover { transform: translateY(-2px); }
+.form-status { margin-top: 1rem; padding: .85rem 1rem; border-radius: .7rem; font-size: .9rem; line-height: 1.5; }
+.form-status.ok { background: #ECFDF5; color: #065F46; border: 1px solid #A7F3D0; }
+.form-status.err { background: #FFF1F2; color: #9F1239; border: 1px solid #FECDD3; }
+.form-status a { text-decoration: underline; font-weight: 600; }
+[data-theme="dark"] .form-status.ok { background: rgba(16,185,129,.14); color: #6EE7B7; border-color: rgba(16,185,129,.35); }
+[data-theme="dark"] .form-status.err { background: rgba(244,63,94,.14); color: #FDA4AF; border-color: rgba(244,63,94,.35); }
+
+/* ===================== Démo interactive UnlockBill ===================== */
+.sim-paper { background: #fff; color: #0F172A; border: 1px solid #E2E8F0; border-radius: .9rem; padding: 1.4rem; font-size: .82rem; position: relative; overflow: hidden; box-shadow: 0 18px 40px -22px rgba(15,23,42,.35); }
+.sim-head { display: flex; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; line-height: 1.5; }
+.sim-right { text-align: right; }
+.sim-muted { color: #64748B; }
+.sim-paper table, .sim-table { width: 100%; border-collapse: collapse; }
+.sim-paper th, .sim-paper td { padding: .4rem .35rem; border-bottom: 1px solid #E2E8F0; text-align: left; color: #0F172A; }
+.sim-paper th { font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; color: #64748B; }
+.sim-paper .num, .sim-table .num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.sim-paper .sim-total td { font-weight: 800; border-bottom: 0; }
+.sim-scan { position: absolute; left: 0; right: 0; top: 0; height: 3px; background: linear-gradient(90deg, transparent, #3B82F6, transparent); box-shadow: 0 0 14px 4px rgba(59,130,246,.45); opacity: 0; }
+.sim-paper.scanning .sim-scan { opacity: 1; animation: sim-scan 1.8s ease-in-out infinite; }
+@keyframes sim-scan { 0% { top: 0; } 100% { top: calc(100% - 3px); } }
+.hv { border-radius: 4px; padding: 0 3px; transition: background-color .4s ease; }
+.sim-paper.hl-on .hv { background: rgba(20,184,166,.28); }
+.sim-tabs { display: flex; flex-wrap: wrap; gap: .4rem; }
+.sim-tab { border: 1px solid #E2E8F0; background: #fff; color: #334155; border-radius: 9999px; padding: .4rem .85rem; font-size: .8rem; font-weight: 600; cursor: pointer; font-family: inherit; }
+.sim-tab[aria-selected="true"] { background: linear-gradient(135deg, #4F46E5, #3B82F6); color: #fff; border-color: transparent; }
+.sim-table th, .sim-table td { padding: .5rem .4rem; border-bottom: 1px solid #E2E8F0; text-align: left; font-size: .85rem; color: #0F172A; }
+.sim-table th { font-size: .7rem; text-transform: uppercase; letter-spacing: .04em; color: #64748B; }
+.sim-table .sim-sum td { font-weight: 800; border-bottom: 0; }
+.sim-pane { animation: sim-in .35s ease; }
+@keyframes sim-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.sim-ok { color: #059669; font-weight: 600; font-size: .85rem; }
+[data-theme="dark"] .sim-tab { background: #0F172A; border-color: #1E293B; color: #CBD5E1; }
+[data-theme="dark"] .sim-tab[aria-selected="true"] { color: #fff; border-color: transparent; }
+[data-theme="dark"] .sim-table th, [data-theme="dark"] .sim-table td { border-color: #1E293B; color: #E2E8F0; }
+[data-theme="dark"] .sim-table th { color: #94A3B8; }
+[data-theme="dark"] .sim-ok { color: #34D399; }

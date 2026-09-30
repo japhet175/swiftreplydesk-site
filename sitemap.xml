@@ -228,4 +228,28 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/business-security.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/business-security.html"/>
   </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/reserver-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/reserver-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/book-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/book-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/book-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/reserver-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/book-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/book-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-unlockbill.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-unlockbill.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/unlockbill-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/unlockbill-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/unlockbill-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-unlockbill.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/unlockbill-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/unlockbill-demo.html"/>
+  </url>
 </urlset>

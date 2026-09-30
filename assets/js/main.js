@@ -97,3 +97,68 @@
     try { localStorage.setItem('srd-theme', dark ? 'dark' : 'light'); } catch (e) {}
   });
 })();
+
+
+/* ---- Formulaires : envoi direct dans la boîte mail (via FormSubmit, sans serveur) ---- */
+(function () {
+  function show(el, on) { if (el) el.hidden = !on; }
+  document.querySelectorAll('input[type="date"][data-min-today]').forEach(function (i) {
+    i.min = new Date().toISOString().slice(0, 10);
+  });
+  document.querySelectorAll('form[data-srd-form]').forEach(function (form) {
+    var ok = form.querySelector('[data-form-success]');
+    var err = form.querySelector('[data-form-error]');
+    var btn = form.querySelector('button[type="submit"]');
+    var label = btn ? btn.innerHTML : '';
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var honey = form.querySelector('[name="_honey"]');
+      if (honey && honey.value) return;
+      var data = {};
+      new FormData(form).forEach(function (v, k) { if (k !== '_honey') data[k] = v; });
+      data._subject = (form.getAttribute('data-subject-prefix') || '[SwiftReplyDesk] ') + (data.subject || '');
+      data._template = 'table';
+      data._captcha = 'false';
+      var ar = form.getAttribute('data-autoresponse');
+      if (ar) data._autoresponse = ar;
+      show(ok, false); show(err, false);
+      if (btn) { btn.disabled = true; btn.innerHTML = btn.getAttribute('data-sending') || '…'; }
+      fetch(form.getAttribute('data-endpoint'), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(function (r) { return r.json().then(function (j) { return { ok: r.ok, j: j }; }); })
+        .then(function (res) {
+          if (res.ok && (res.j.success === true || res.j.success === 'true')) { show(ok, true); form.reset(); }
+          else { show(err, true); }
+        })
+        .catch(function () { show(err, true); })
+        .then(function () { if (btn) { btn.disabled = false; btn.innerHTML = label; } });
+    });
+  });
+})();
+
+/* ---- Bouton WhatsApp flottant ---- */
+(function () {
+  var fr = (document.documentElement.lang || 'en').slice(0, 2) === 'fr';
+  var a = document.createElement('a');
+  a.className = 'wa-float';
+  a.href = 'https://wa.me/250798980113?text=' + encodeURIComponent('Hello! 👋 Welcome to SwiftReplyDesk. Which service are you interested in? (UnlockBill, SomaGuide, training, custom development, or other)');
+  a.target = '_blank';
+  a.rel = 'noopener';
+  a.setAttribute('aria-label', fr ? 'Discuter sur WhatsApp' : 'Chat on WhatsApp');
+  a.innerHTML = '<i class="fa-brands fa-whatsapp"></i>';
+  document.body.appendChild(a);
+})();
+
+/* ---- Statistiques de visites (Vercel Web Analytics, sans cookies) ---- */
+(function () {
+  var h = location.hostname;
+  if (h === 'localhost' || h === '127.0.0.1') return;
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  var s = document.createElement('script');
+  s.defer = true;
+  s.src = '/_vercel/insights/script.js';
+  document.head.appendChild(s);
+})();

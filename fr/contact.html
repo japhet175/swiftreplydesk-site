@@ -91,7 +91,7 @@
           <a href="contact.html" class="rounded-full bg-indigo-600 px-2.5 py-1 text-white" aria-current="true">FR</a>
           <a href="../en/contact.html" class="rounded-full px-2.5 py-1 text-slate-500 hover:text-slate-900">EN</a>
         </div>
-        <a href="contact.html" class="btn btn-primary btn-sm hidden sm:inline-flex">Demander une démo</a>
+        <a href="reserver-demo.html" class="btn btn-primary btn-sm hidden sm:inline-flex">Demander une démo</a>
         <button id="menu-btn" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-700 lg:hidden" aria-expanded="false" aria-label="Ouvrir le menu">
           <i class="fa-solid fa-bars text-xl"></i>
         </button>
@@ -107,7 +107,7 @@
         <a href="formations-services.html" class="mm-link">Formations &amp; Services <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i></a>
         <a href="incubateur.html" class="mm-link">Incubateur <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i></a>
         <a href="a-propos.html" class="mm-link">À propos <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i></a>
-        <a href="contact.html" class="btn btn-primary w-full mt-3">Demander une démo</a>
+        <a href="reserver-demo.html" class="btn btn-primary w-full mt-3">Demander une démo</a>
       </div>
     </div>
   </header>
@@ -171,7 +171,7 @@
         <!-- Formulaire -->
         <div class="lg:col-span-3">
           <div class="card p-6 sm:p-8">
-            <form id="contact-form">
+            <form id="contact-form" data-srd-form data-endpoint="https://formsubmit.co/ajax/infoswiftreplydesk.site@swiftreplydesk.site" data-autoresponse="Merci pour votre message. SwiftReplyDesk vous répond sous 24h ouvrées.">
               <div class="grid gap-5 sm:grid-cols-2">
                 <div>
                   <label for="name" class="mb-1.5 block text-sm font-semibold text-slate-700">Nom <span class="text-rose-500">*</span></label>
@@ -218,8 +218,12 @@
                 <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre besoin, votre projet ou votre question…" class="w-full resize-y rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder-slate-400 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500/20"></textarea>
               </div>
 
-              <button type="submit" class="btn btn-primary btn-lg mt-6 w-full sm:w-auto">Envoyer le message <i class="fa-solid fa-paper-plane"></i></button>
-              <p class="mt-4 text-xs text-slate-400">En envoyant, vous acceptez d'être recontacté au sujet de votre demande. Réponse sous 24h ouvrées.</p>
+              <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true">
+              <div data-form-success hidden class="form-status ok" role="status">Merci ! Votre message a bien été envoyé. Nous vous répondons sous 24h ouvrées.</div>
+              <div data-form-error hidden class="form-status err" role="alert">L'envoi n'a pas abouti. Écrivez-nous directement par <a href="mailto:infoswiftreplydesk.site@swiftreplydesk.site">email</a> ou sur <a href="https://wa.me/250798980113" target="_blank" rel="noopener">WhatsApp</a>.</div>
+
+              <button type="submit" data-sending="Envoi en cours…" class="btn btn-primary btn-lg mt-6 w-full sm:w-auto">Envoyer le message <i class="fa-solid fa-paper-plane"></i></button>
+              <p class="mt-4 text-xs text-slate-400">En envoyant, vous acceptez d'être recontacté au sujet de votre demande. Réponse sous 24h ouvrées. Le message est transmis par le service FormSubmit et ne sert qu'à traiter votre demande.</p>
             </form>
           </div>
         </div>
@@ -257,7 +261,7 @@
           <div class="footer-title">Entreprise</div>
           <a href="a-propos.html" class="footer-link">À propos</a>
           <a href="contact.html" class="footer-link">Contact</a>
-          <a href="contact.html" class="footer-link">Demander une démo</a>
+          <a href="reserver-demo.html" class="footer-link">Demander une démo</a>
         </div>
         <div class="lg:col-span-2">
           <div class="footer-title">Services</div>
@@ -283,17 +287,5 @@
   </footer>
 
   <script src="../assets/js/main.js"></script>
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
-      e.preventDefault();
-      var n = document.getElementById('name').value.trim();
-      var em = document.getElementById('email').value.trim();
-      var co = document.getElementById('company').value.trim();
-      var s = document.getElementById('subject').value;
-      var m = document.getElementById('message').value.trim();
-      var body = 'Nom : ' + n + '\nEmail : ' + em + (co ? '\nEntreprise : ' + co : '') + '\n\n' + m;
-      window.location.href = 'mailto:infoswiftreplydesk.site@swiftreplydesk.site?subject=' + encodeURIComponent('[SwiftReplyDesk] ' + s) + '&body=' + encodeURIComponent(body);
-    });
-  </script>
 </body>
 </html>
