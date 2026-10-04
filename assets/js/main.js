@@ -144,7 +144,7 @@
   var fr = (document.documentElement.lang || 'en').slice(0, 2) === 'fr';
   var a = document.createElement('a');
   a.className = 'wa-float';
-  a.href = 'https://wa.me/250735846606?text=' + encodeURIComponent('Hello! 👋 Welcome to SwiftReplyDesk. Which service are you interested in? (UnlockBill, SomaGuide, training, custom development, or other)');
+  a.href = 'https://wa.me/250798980113?text=' + encodeURIComponent('Hello! 👋 Welcome to SwiftReplyDesk. Which service are you interested in? (UnlockBill, SomaGuide, training, custom development, or other)');
   a.target = '_blank';
   a.rel = 'noopener';
   a.setAttribute('aria-label', fr ? 'Discuter sur WhatsApp' : 'Chat on WhatsApp');
