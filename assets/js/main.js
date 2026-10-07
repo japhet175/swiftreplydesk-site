@@ -151,14 +151,3 @@
   a.innerHTML = '<i class="fa-brands fa-whatsapp"></i>';
   document.body.appendChild(a);
 })();
-
-/* ---- Statistiques de visites (Vercel Web Analytics, sans cookies) ---- */
-(function () {
-  var h = location.hostname;
-  if (h === 'localhost' || h === '127.0.0.1') return;
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  var s = document.createElement('script');
-  s.defer = true;
-  s.src = '/_vercel/insights/script.js';
-  document.head.appendChild(s);
-})();
