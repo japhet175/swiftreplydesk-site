@@ -252,4 +252,64 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/unlockbill-demo.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/unlockbill-demo.html"/>
   </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/rapprochement-mobile-money.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/rapprochement-mobile-money.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/mobile-money-reconciliation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/mobile-money-reconciliation.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/mobile-money-reconciliation.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/rapprochement-mobile-money.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/mobile-money-reconciliation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/mobile-money-reconciliation.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/relances-impayes-automatiques.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/relances-impayes-automatiques.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/automatic-payment-reminders.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/automatic-payment-reminders.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/automatic-payment-reminders.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/relances-impayes-automatiques.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/automatic-payment-reminders.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/automatic-payment-reminders.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/preparation-tva-ebm.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/preparation-tva-ebm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/ebm-vat-preparation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/ebm-vat-preparation.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/ebm-vat-preparation.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/preparation-tva-ebm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/ebm-vat-preparation.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/ebm-vat-preparation.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/sauvegarde-donnees-automatique.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/sauvegarde-donnees-automatique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/automatic-data-backup.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/automatic-data-backup.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/automatic-data-backup.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/sauvegarde-donnees-automatique.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/automatic-data-backup.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/automatic-data-backup.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/presence-en-ligne-express.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/presence-en-ligne-express.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/express-online-presence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/express-online-presence.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/express-online-presence.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/presence-en-ligne-express.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/express-online-presence.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/express-online-presence.html"/>
+  </url>
 </urlset>
