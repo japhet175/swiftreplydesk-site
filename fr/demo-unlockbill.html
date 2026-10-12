@@ -137,6 +137,21 @@
       </div>
     </section>
 
+    <section class="section" style="padding-bottom:0">
+      <div class="wrap">
+        <div class="max-w-2xl">
+          <p class="eyebrow">Tutoriel vidéo complet</p>
+          <h2 class="mt-3 text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">De la facture EBM à la déclaration TVA, en 9 minutes</h2>
+          <p class="mt-4 text-lg text-slate-600">Une démonstration pas à pas avec une société fictive (Kigali Textiles Ltd). Choisissez votre langue.</p>
+        </div>
+        <div class="sim-tabs mt-6" role="tablist" id="vid-tabs"><button class="sim-tab" role="tab" data-vid="fr" aria-selected="true">Français</button><button class="sim-tab" role="tab" data-vid="en" aria-selected="false">English</button><button class="sim-tab" role="tab" data-vid="rw" aria-selected="false">Kinyarwanda</button></div>
+        <div class="mt-4 overflow-hidden rounded-2xl border border-slate-200" style="background:#0F172A">
+          <video id="vid-player" controls preload="metadata" playsinline poster="../assets/video/unlockbill-poster.jpg" style="display:block;width:100%;height:auto;aspect-ratio:16/10" src="../assets/video/unlockbill-tutorial-fr.mp4">Votre navigateur ne lit pas cette vidéo.</video>
+        </div>
+        <p class="mt-3 text-center text-sm text-slate-500">Vidéo de démonstration avec des données fictives ; l'affichage réel peut évoluer.</p>
+      </div>
+    </section>
+
     <section class="section">
       <div class="wrap">
         <div class="sim-tabs" role="tablist"><button class="sim-tab" role="tab" data-step="0" aria-selected="true">1 · Facture</button><button class="sim-tab" role="tab" data-step="1" aria-selected="false">2 · Extraction IA</button><button class="sim-tab" role="tab" data-step="2" aria-selected="false">3 · Grand livre</button><button class="sim-tab" role="tab" data-step="3" aria-selected="false">4 · Bilan</button></div>
@@ -291,6 +306,10 @@
       });
       go(0);
     })();
+  </script>
+  <script>
+    (function(){var v=document.getElementById('vid-player'),tabs=document.querySelectorAll('#vid-tabs [data-vid]');
+      tabs.forEach(function(b){b.addEventListener('click',function(){tabs.forEach(function(x){x.setAttribute('aria-selected',x===b?'true':'false');});v.pause();v.src='../assets/video/unlockbill-tutorial-'+b.getAttribute('data-vid')+'.mp4';v.load();});});})();
   </script>
 </body>
 </html>
