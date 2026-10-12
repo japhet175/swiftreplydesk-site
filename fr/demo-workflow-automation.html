@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Démo : automatisation de workflows — SwiftReplyDesk</title>
+  <meta name="description" content="Une entreprise fictive reçoit une commande par email. Lancez le workflow et suivez chaque étape automatisée, avec le temps gagné.">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/png" sizes="192x192" href="/assets/logo/icon-192.png">
+  <link rel="apple-touch-icon" href="/assets/logo/icon-192.png">
+  <link rel="canonical" href="https://swiftreplydesk.site/fr/demo-workflow-automation.html">
+  <link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-workflow-automation.html">
+  <link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/workflow-automation-demo.html">
+  <link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/workflow-automation-demo.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/demos.css">
+</head>
+<body class="antialiased">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <nav class="wrap flex h-16 items-center justify-between gap-4" aria-label="Navigation principale">
+      <a href="index.html" class="flex shrink-0 items-center gap-2.5" aria-label="SwiftReplyDesk — Accueil">
+        <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-600 to-blue-500 text-white shadow-sm">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4 4h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-6l-3 4-3-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM13 5 8 11H11L10 15 15 10H12L13 5z"/></svg>
+        </span>
+        <span class="text-lg font-bold tracking-tight text-slate-900">SwiftReply<span class="text-indigo-600">Desk</span></span>
+      </a>
+
+      <div class="hidden items-center gap-1 lg:flex">
+        <div class="dropdown">
+          <button class="nav-item" aria-haspopup="true">Logiciels <i class="fa-solid fa-chevron-down text-[10px]"></i></button>
+          <div class="dropdown-panel">
+            <div class="dropdown-card w-72">
+              <a href="unlockbill.html" class="dropdown-link">
+                <span class="di"><i class="fa-solid fa-file-invoice-dollar"></i></span>
+                <span><strong class="block text-slate-900">UnlockBill</strong><span class="text-slate-500">Comptabilité rwandaise automatisée</span></span>
+              </a>
+              <a href="https://unlockbill.com" target="_blank" rel="noopener" class="dropdown-link">
+                <span class="di"><i class="fa-solid fa-globe"></i></span>
+                <span><strong class="block text-slate-900">Visiter le site ↗</strong><span class="text-slate-500">unlockbill.com</span></span>
+              </a>
+              <a href="somaguide.html" class="dropdown-link">
+                <span class="di"><i class="fa-solid fa-graduation-cap"></i></span>
+                <span><strong class="block text-slate-900">SomaGuide</strong><span class="text-slate-500">L'IA au service de l'éducation</span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="dropdown">
+          <button class="nav-item" aria-haspopup="true">Formations &amp; Services <i class="fa-solid fa-chevron-down text-[10px]"></i></button>
+          <div class="dropdown-panel">
+            <div class="dropdown-card dropdown-wide">
+              <div class="grid grid-cols-3 gap-1 p-1">
+                <div>
+                  <div class="dropdown-heading">Formations</div>
+                  <a href="formation-quickbooks-online.html" class="dropdown-link">QuickBooks Online</a>
+                  <a href="integration-quickbooks-unlockbill.html" class="dropdown-link">Intégration QBO ↔ UnlockBill</a>
+                  <a href="installation-ia-agents.html" class="dropdown-link">Modèles IA &amp; agents</a>
+                </div>
+                <div>
+                  <div class="dropdown-heading">Services techniques</div>
+                  <a href="developpement-sur-mesure.html" class="dropdown-link">Développement sur mesure</a>
+                  <a href="automatisation-workflows.html" class="dropdown-link">Automatisation de workflows</a>
+                  <a href="chatbots-whatsapp.html" class="dropdown-link">Chatbots WhatsApp</a>
+                  <a href="digitalisation-archives.html" class="dropdown-link">Digitalisation d'archives</a>
+                  <a href="dashboards-reporting.html" class="dropdown-link">Dashboards de reporting</a>
+                  <a href="maintenance-technique.html" class="dropdown-link">Maintenance récurrente</a>
+                  <a href="outils-cloud-pme.html" class="dropdown-link">Outils cloud PME</a>
+                </div>
+                <div>
+                  <div class="dropdown-heading">Sécurité &amp; conformité</div>
+                  <a href="securite-entreprises.html" class="dropdown-link">Sécurité des entreprises</a>
+                  <a href="audit-conformite-donnees.html" class="dropdown-link">Audit &amp; conformité</a>
+                  <div class="dropdown-heading mt-3">Solutions rapides</div>
+                  <a href="rapprochement-mobile-money.html" class="dropdown-link">Rapprochement Mobile Money</a>
+                  <a href="relances-impayes-automatiques.html" class="dropdown-link">Relances d'impayés</a>
+                  <a href="preparation-tva-ebm.html" class="dropdown-link">Préparation TVA (EBM)</a>
+                  <a href="sauvegarde-donnees-automatique.html" class="dropdown-link">Sauvegarde automatique</a>
+                  <a href="presence-en-ligne-express.html" class="dropdown-link">Présence en ligne express</a>
+                </div>
+              </div>
+              <a href="formations-services.html" class="dropdown-link mt-1 flex justify-between border-t border-slate-100 pt-2 font-semibold text-indigo-600">Voir tous les services <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="incubateur.html" class="nav-item">Incubateur</a>
+        <a href="a-propos.html" class="nav-item">À propos</a>
+      </div>
+
+      <div class="flex items-center gap-2 sm:gap-3">
+        <div class="flex items-center gap-0.5 rounded-full border border-slate-200 bg-white p-0.5 text-xs font-semibold">
+          <a href="demo-workflow-automation.html" class="rounded-full bg-indigo-600 px-2.5 py-1 text-white" aria-current="true">FR</a>
+          <a href="../en/workflow-automation-demo.html" class="rounded-full px-2.5 py-1 text-slate-500 hover:text-slate-900">EN</a>
+        </div>
+        <a href="reserver-demo.html" class="btn btn-primary btn-sm hidden sm:inline-flex">Démo gratuite</a>
+        <button id="menu-btn" class="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 text-slate-700 lg:hidden" aria-expanded="false" aria-label="Ouvrir le menu">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white lg:hidden">
+      <div class="wrap py-4">
+        <div class="mm-heading">Logiciels</div>
+        <a href="unlockbill.html" class="mm-link">UnlockBill <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i></a>
+        <a href="somaguide.html" class="mm-link">SomaGuide <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i></a>
+        <div class="mm-heading">Navigation</div>
+        <a href="formations-services.html" class="mm-link">Formations &amp; Services <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i></a>
+        <a href="incubateur.html" class="mm-link">Incubateur <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i></a>
+        <a href="a-propos.html" class="mm-link">À propos <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i></a>
+        <a href="reserver-demo.html" class="btn btn-primary w-full mt-3">Démo gratuite</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="relative overflow-hidden bg-slate-50">
+      <div class="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full bg-indigo-200/40 blur-3xl"></div>
+      <div class="wrap relative py-14 lg:py-16">
+        <div class="max-w-3xl">
+          <span class="badge bg-indigo-50 text-indigo-700"><i class="fa-solid fa-play"></i> Démo interactive · Données fictives</span>
+          <h1 class="mt-5 text-3xl font-extrabold leading-tight tracking-tight text-slate-900 sm:text-5xl">Une commande arrive.<br><span class="text-gradient">Le reste se fait tout seul</span></h1>
+          <p class="mt-5 max-w-2xl text-lg text-slate-600">Une entreprise fictive reçoit une commande par email. Lancez le workflow et suivez chaque étape automatisée, avec le temps gagné.</p>
+          <div class="mt-7 flex flex-wrap items-center gap-3">
+            <a href="automatisation-workflows.html" class="btn btn-outline btn-lg">Voir le service</a>
+            <a href="demos.html" class="btn btn-outline btn-lg">Toutes les démos</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:2.5rem">
+      <div class="wrap">
+        <div id="demo-root" data-demo="workflow-automation"><noscript>JavaScript required.</noscript></div>
+      </div>
+    </section>
+
+    <section class="section pt-0">
+      <div class="wrap">
+        <div class="rounded-2xl bg-slate-900 px-8 py-14 text-center sm:px-12">
+          <h2 class="mx-auto max-w-2xl text-3xl font-extrabold tracking-tight text-white sm:text-4xl">Ce que vous venez de voir, sur vos données</h2>
+          <p class="mx-auto mt-4 max-w-xl text-lg text-slate-300">Cette démo utilise des noms et des chiffres fictifs. Sur votre cas réel, nous adaptons l'outil à vos formats et à vos règles. Sur devis, sans engagement.</p>
+          <div class="mt-8 flex flex-wrap justify-center gap-3">
+            <a href="contact.html?subject=Automatisation%20de%20workflows" class="btn btn-primary btn-lg">Parler de mon besoin</a>
+            <a href="contact.html?subject=Automatisation%20de%20workflows" class="btn btn-white btn-lg">Demander un devis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-slate-900 text-slate-300">
+    <div class="wrap py-14">
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-12">
+        <div class="lg:col-span-4">
+          <a href="index.html" class="flex items-center gap-2.5">
+            <span class="flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-to-br from-indigo-600 to-blue-500 text-white">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M4 4h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-6l-3 4-3-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zM13 5 8 11H11L10 15 15 10H12L13 5z"/></svg>
+            </span>
+            <span class="text-lg font-bold text-white">SwiftReply<span class="text-indigo-400">Desk</span></span>
+          </a>
+          <p class="mt-4 max-w-sm text-sm text-slate-400">Des solutions intelligentes pour les entreprises africaines. Nous automatisons vos processus métier grâce à l'IA.</p>
+          <div class="mt-6 flex gap-3">
+            <a href="#" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-slate-300 transition hover:bg-indigo-600 hover:text-white" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-slate-300 transition hover:bg-indigo-600 hover:text-white" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-slate-300 transition hover:bg-indigo-600 hover:text-white" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://wa.me/250735846606?text=Hello%21%20%F0%9F%91%8B%20Welcome%20to%20SwiftReplyDesk.%20Which%20service%20are%20you%20interested%20in%3F%20%28UnlockBill%2C%20SomaGuide%2C%20training%2C%20custom%20development%2C%20or%20other%29" target="_blank" rel="noopener" class="flex h-9 w-9 items-center justify-center rounded-lg bg-white/5 text-slate-300 transition hover:bg-indigo-600 hover:text-white" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="footer-title">Pôles d'activité</div>
+          <a href="unlockbill.html" class="footer-link">UnlockBill</a>
+          <a href="somaguide.html" class="footer-link">SomaGuide</a>
+          <a href="formations-services.html" class="footer-link">Formations &amp; Services</a>
+          <a href="incubateur.html" class="footer-link">Incubateur R&amp;D</a>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="footer-title">Entreprise</div>
+          <a href="a-propos.html" class="footer-link">À propos</a>
+          <a href="contact.html" class="footer-link">Contact</a>
+          <a href="reserver-demo.html" class="footer-link">Démo gratuite</a>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="footer-title">Services</div>
+          <a href="formations-services.html" class="footer-link">Tous les services</a>
+          <a href="developpement-sur-mesure.html" class="footer-link">Développement sur mesure</a>
+          <a href="automatisation-workflows.html" class="footer-link">Automatisation</a>
+          <a href="securite-entreprises.html" class="footer-link">Sécurité des entreprises</a>
+        </div>
+        <div class="lg:col-span-2">
+          <div class="footer-title">Contact</div>
+          <p class="footer-link"><i class="fa-solid fa-location-dot"></i> Kigali, Rwanda</p>
+          <a href="mailto:infoswiftreplydesk.site@swiftreplydesk.site" class="footer-link"><i class="fa-solid fa-envelope"></i> infoswiftreplydesk.site@swiftreplydesk.site</a>
+          <a href="https://wa.me/250735846606?text=Hello%21%20%F0%9F%91%8B%20Welcome%20to%20SwiftReplyDesk.%20Which%20service%20are%20you%20interested%20in%3F%20%28UnlockBill%2C%20SomaGuide%2C%20training%2C%20custom%20development%2C%20or%20other%29" target="_blank" rel="noopener" class="footer-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="wrap flex flex-col items-center justify-between gap-2 py-5 text-xs text-slate-500 sm:flex-row">
+        <p>© <span id="year">2026</span> SwiftReplyDesk. Tous droits réservés.</p>
+        <p>Conçu &amp; développé au Rwanda</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/demos-core.js"></script>
+  <script src="../assets/js/demo-workflow-automation.js"></script>
+</body>
+</html>

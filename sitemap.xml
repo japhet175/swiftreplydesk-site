@@ -312,4 +312,208 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/express-online-presence.html"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/express-online-presence.html"/>
   </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-mobile-money.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-mobile-money.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/mobile-money-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/mobile-money-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/mobile-money-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-mobile-money.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/mobile-money-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/mobile-money-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-payment-reminders.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-payment-reminders.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/payment-reminders-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/payment-reminders-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/payment-reminders-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-payment-reminders.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/payment-reminders-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/payment-reminders-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-vat-ebm.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-vat-ebm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/vat-ebm-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/vat-ebm-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/vat-ebm-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-vat-ebm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/vat-ebm-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/vat-ebm-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-backup.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-backup.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/backup-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/backup-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/backup-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-backup.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/backup-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/backup-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-online-presence.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-online-presence.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/online-presence-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/online-presence-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/online-presence-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-online-presence.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/online-presence-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/online-presence-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-workflow-automation.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-workflow-automation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/workflow-automation-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/workflow-automation-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/workflow-automation-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-workflow-automation.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/workflow-automation-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/workflow-automation-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-whatsapp-chatbot.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-whatsapp-chatbot.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/whatsapp-chatbot-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/whatsapp-chatbot-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/whatsapp-chatbot-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-whatsapp-chatbot.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/whatsapp-chatbot-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/whatsapp-chatbot-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-archive-search.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-archive-search.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/archive-search-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/archive-search-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/archive-search-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-archive-search.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/archive-search-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/archive-search-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-dashboards.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-dashboards.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/dashboards-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/dashboards-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/dashboards-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-dashboards.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/dashboards-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/dashboards-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-data-audit.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-data-audit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/data-audit-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/data-audit-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/data-audit-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-data-audit.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/data-audit-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/data-audit-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-maintenance.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-maintenance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/maintenance-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/maintenance-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/maintenance-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-maintenance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/maintenance-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/maintenance-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-cloud-tools.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-cloud-tools.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/cloud-tools-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/cloud-tools-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/cloud-tools-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-cloud-tools.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/cloud-tools-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/cloud-tools-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-security.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-security.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/security-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/security-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/security-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-security.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/security-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/security-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-quickbooks-training.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-quickbooks-training.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/quickbooks-training-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/quickbooks-training-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/quickbooks-training-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-quickbooks-training.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/quickbooks-training-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/quickbooks-training-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-quickbooks-sync.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-quickbooks-sync.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/quickbooks-sync-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/quickbooks-sync-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/quickbooks-sync-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-quickbooks-sync.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/quickbooks-sync-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/quickbooks-sync-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demo-ai-assistant.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-ai-assistant.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/ai-assistant-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/ai-assistant-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/ai-assistant-demo.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demo-ai-assistant.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/ai-assistant-demo.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/ai-assistant-demo.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/fr/demos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/demos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/demos.html"/>
+  </url>
+  <url>
+    <loc>https://swiftreplydesk.site/en/demos.html</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://swiftreplydesk.site/fr/demos.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://swiftreplydesk.site/en/demos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://swiftreplydesk.site/en/demos.html"/>
+  </url>
 </urlset>
